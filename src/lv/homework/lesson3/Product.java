@@ -1,5 +1,6 @@
 package lv.homework.lesson3;
 
+//OK
 public class Product {
 
     private String name;

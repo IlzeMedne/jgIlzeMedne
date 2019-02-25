@@ -6,7 +6,7 @@ public class CircleTest {
         Circle myCircle = new Circle();
 
         myCircle.setRadius(20);
-        myCircle.calculateArea();
+        myCircle.calculateArea();  //lieka rinda, jo rezultāts tiek aprēķināts, bet netiek saglabāts
 
         System.out.println("Circle area is: " + myCircle.calculateArea());
 

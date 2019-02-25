@@ -2,6 +2,7 @@ package lv.homework.lesson3;
 
 public class Circle {
 
+    //mainīgajam jābūt "private"
     double radius;
 
     public double getRadius() {

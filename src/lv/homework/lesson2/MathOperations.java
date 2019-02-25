@@ -10,27 +10,27 @@ public class MathOperations {
 
         int sumResult = firstNumber + secondNumber;
         int subtractResult = firstNumber - secondNumber;
-        int devideResult = firstNumber / secondNumber;
+        int devideResult = firstNumber / secondNumber; // "devide" - pareizrakstība
         int multiplyResult = firstNumber * secondNumber;
 
-        System.out.println("Sum Result: "+ sumResult);
+        System.out.println("Sum Result: "+ sumResult); //"ctrl + alt + l" koda formatēšāna - pirms un pēc "+" atsrapei jābūt
         System.out.println("Subtract Result: " + subtractResult);
-        System.out.println("Devide Result: " + devideResult);
-        System.out.println("Multily Result: " + multiplyResult);
+        System.out.println("Devide Result: " + devideResult);    //pareizrakstība
+        System.out.println("Multily Result: " + multiplyResult); //pareizrakstība
 
-
+        //Shis nebija uzdevumā prasīts
         System.out.println("WATERHOUSE INVENTORY");
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("ENTER Opening balance, kg (two decimal places):");
-        double openingBalace = scanner.nextDouble();
+        double openingBalace = scanner.nextDouble(); //misspelling
         System.out.println("ENTER Incoming, kg (two decimal places):");
         double incoming = scanner.nextDouble();
         System.out.println("ENTER Outgoing, kg (two decimal places):");
         double outgoing = scanner.nextDouble();
 
-        double closingBalance = getClosingBalance(openingBalace, incoming, outgoing);
+        double closingBalance = getClosingBalance(openingBalace, incoming, outgoing); //better "calculateClosingBalance"
 
         System.out.println("Closing Balance, kg is: " + closingBalance);
 
@@ -48,7 +48,7 @@ public class MathOperations {
         return incoming / inventoryPeriodInDays;
     }
 
-    private static double getClosingBalance(double openingBalace, double incoming, double outgoing) {
+    private static double getClosingBalance(double openingBalace, double incoming, double outgoing) { //misspelling
         return openingBalace + incoming - outgoing;
     }
 }
