@@ -2,6 +2,7 @@ package lv.homework.lesson3;
 
 public class Book {
 
+    // laukiem jābūt "private"
     String author;
     String title;
     int year;

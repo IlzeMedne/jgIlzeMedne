@@ -9,7 +9,10 @@ public class CarTest {
         firstCar.setManufacturer("Mercedes");
         firstCar.setYear(2018);
 
-        System.out.println("I want " + firstCar.getColor()+ " " + firstCar.getManufacturer() + " of " + firstCar.getYear() + " year.");
+        //garās rindas ajag sadalīt īsākās
+        System.out.println("I want " + firstCar.getColor()
+                + " " + firstCar.getManufacturer()
+                + " of " + firstCar.getYear() + " year.");
 
 
 

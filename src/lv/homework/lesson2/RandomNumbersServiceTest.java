@@ -6,7 +6,7 @@ public class RandomNumbersServiceTest {
     public static void main(String[] args) {
 
         Random randomGenerator = new Random();
-        int randomNumber = randomGenerator.nextInt(101);
+        int randomNumber = randomGenerator.nextInt(101); //nav izmantots - jānodzēš
 
 
         int firstRandomNumber = randomGenerator.nextInt(101);
