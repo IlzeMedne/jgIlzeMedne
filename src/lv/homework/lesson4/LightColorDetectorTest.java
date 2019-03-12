@@ -1,5 +1,6 @@
 package lv.homework.lesson4;
 
+//Ok, letojam ctrl + alt + l
 public class LightColorDetectorTest {
 
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class LightColorDetectorTest {
                 + wavelength + ", tad " + result);
 
         LightColorDetectorTest test = new LightColorDetectorTest();
+        //metožu nosaukumi tikai "in english" arī testu
         test.shouldGaismaIrViolētāKrāsā();
         test.shouldGaismaIrZilāKrāsā();
         test.shouldGaismaIrZaļāKrāsā();

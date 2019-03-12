@@ -1,5 +1,6 @@
 package lv.homework.lesson4;
 
+//ctrl + alt + l
 public class NumberComparisionServiceTest {
 
     public void testIsEqual(){
