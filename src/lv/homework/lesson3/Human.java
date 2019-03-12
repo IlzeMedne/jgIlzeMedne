@@ -7,19 +7,23 @@ public class Human {
     private int age;
 
     public void sayHi() {
-        System.out.println("Hi!"); }
+        System.out.println("Hi!");
+    }
 
     public String getName() {
-        return name; }
+        return name;
+    }
 
     public int getAge() {
-        return age; }
+        return age;
+    }
 
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
 
     public void setAge(int age) {
-        this.age = age; }
-
+        this.age = age;
+    }
 
 }

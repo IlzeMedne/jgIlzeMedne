@@ -13,76 +13,76 @@ public class LightColorDetectorTest {
                 + wavelength + ", tad " + result);
 
         LightColorDetectorTest test = new LightColorDetectorTest();
-        test.shouldGaismaIrViolētāKrāsā();
-        test.shouldGaismaIrZilāKrāsā();
-        test.shouldGaismaIrZaļāKrāsā();
-        test.shouldGaismaIrDzeltenāKrāsā();
-        test.shouldGaismaIrOranžāKrāsā();
-        test.shouldGaismaIrSarkanāKrāsā();
-        test.shouldGaismaNavRedzama();
+        test.shouldLightIsViolet();
+        test.shouldLightIsBlue();
+        test.shouldLightIsGreen();
+        test.shouldLightIsYellow();
+        test.shouldLightIsOrange();
+        test.shouldLightIsRed();
+        test.shouldLightIsNotVisible();
     }
 
-    public void shouldGaismaIrViolētāKrāsā(){
+    public void shouldLightIsViolet() {
 
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(444);
 
-        compareResult(result.equals("gaisma ir violētā krāsā"),"shouldGaismaIrViolētāKrāsā");
+        compareResult(result.equals("gaisma ir violētā krāsā"), "shouldLightIsViolet");
     }
 
-    public void shouldGaismaIrZilāKrāsā(){
+    public void shouldLightIsBlue() {
 
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(460);
 
-        compareResult(result.equals("gaisma ir zilā krāsā"),"shouldGaismaIrZilāKrāsā");
+        compareResult(result.equals("gaisma ir zilā krāsā"), "shouldLightIsBlue");
     }
 
-    public void shouldGaismaIrZaļāKrāsā(){
+    public void shouldLightIsGreen() {
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(562);
 
-        compareResult(result.equals("gaisma ir zaļā krāsā"), "shouldGaismaIrZaļāKrāsā");
+        compareResult(result.equals("gaisma ir zaļā krāsā"), "shouldLightIsGreen");
     }
 
-    public void shouldGaismaIrDzeltenāKrāsā(){
+    public void shouldLightIsYellow() {
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(584);
 
-        compareResult(result.equals("gaisma ir dzeltenā krāsā"), "shouldGaismaIrDzeltenāKrāsā");
+        compareResult(result.equals("gaisma ir dzeltenā krāsā"), "shouldLightIsYellow");
     }
 
-    public void shouldGaismaIrOranžāKrāsā(){
+    public void shouldLightIsOrange() {
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(595);
 
-        compareResult(result.equals("gaisma ir oranžā krāsā"), "shouldGaismaIrOranžāKrāsā");
+        compareResult(result.equals("gaisma ir oranžā krāsā"), "shouldLightIsOrange");
     }
 
-    public void shouldGaismaIrSarkanāKrāsā(){
+    public void shouldLightIsRed() {
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(644);
 
-        compareResult(result.equals("gaisma ir sarkanā krāsā"), "shouldGaismaIrSarkanāKrāsā");
+        compareResult(result.equals("gaisma ir sarkanā krāsā"), "shouldLightIsRed");
     }
 
-    public void shouldGaismaNavRedzama(){
+    public void shouldLightIsNotVisible() {
         LightColorDetector detector = new LightColorDetector();
 
         String result = detector.detect(800);
 
-        compareResult(result.equals("gaisma nav redzama"), "shouldGaismaNavRedzama");
+        compareResult(result.equals("gaisma nav redzama"), "shouldLightIsNotVisible");
     }
 
-    void compareResult(boolean result,String testName){
+    void compareResult(boolean result, String testName) {
 
-        if (result){
+        if (result) {
             System.out.println(testName + " OK");
         } else {
             System.out.println(testName + " FAIL");

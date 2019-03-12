@@ -14,38 +14,38 @@ public class NoiseLevelDetectorTest {
         test.shouldDetectQuietRoom();
     }
 
-    public void shouldDetectJackhammer(){
+    public void shouldDetectJackhammer() {
         NoiseLevelDetector detector = new NoiseLevelDetector();
 
         String result = detector.detect(300);
-        compareResult(result.equals("Jackhammer"),"shouldDetectJackhammer");
+        compareResult(result.equals("Jackhammer"), "shouldDetectJackhammer");
     }
 
-    public void shouldDetectGasLawnmower(){
+    public void shouldDetectGasLawnmower() {
 
         NoiseLevelDetector detector = new NoiseLevelDetector();
 
         String result = detector.detect(95);
-        compareResult(result.equals("Gas lawnmower"),"shouldDetectGasLawnmower");
+        compareResult(result.equals("Gas lawnmower"), "shouldDetectGasLawnmower");
     }
 
-    public void shouldDetectAlarmClock(){
+    public void shouldDetectAlarmClock() {
 
         NoiseLevelDetector detector = new NoiseLevelDetector();
 
         String result = detector.detect(40);
-        compareResult( result.equals("Alarm clock"),"shouldDetectAlarmClock");
+        compareResult(result.equals("Alarm clock"), "shouldDetectAlarmClock");
     }
 
-    public void shouldDetectQuietRoom(){
+    public void shouldDetectQuietRoom() {
         NoiseLevelDetector detector = new NoiseLevelDetector();
         String result = detector.detect(5);
 
-        compareResult(result.equals("Quiet room"),"shouldDetectQuietRoom");
+        compareResult(result.equals("Quiet room"), "shouldDetectQuietRoom");
     }
 
     void compareResult(boolean result, String testName) {
-        if (result){
+        if (result) {
             System.out.println(testName + " OK");
         } else {
             System.out.println(testName + " FAIL");

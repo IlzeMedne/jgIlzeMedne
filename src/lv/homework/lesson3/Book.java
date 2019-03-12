@@ -2,34 +2,41 @@ package lv.homework.lesson3;
 
 public class Book {
 
-    // laukiem jābūt "private"
-    String author;
-    String title;
-    int year;
-    int pageCount;
+    private String author;
+    private String title;
+    private int year;
+    private int pageCount;
 
     public String getAuthor() {
-        return author; }
+        return author;
+    }
 
     public void setAuthor(String author) {
-        this.author = author; }
+        this.author = author;
+    }
 
     public String getTitle() {
-        return title; }
+        return title;
+    }
 
     public void setTitle(String title) {
-        this.title = title; }
+        this.title = title;
+    }
 
     public int getYear() {
-        return year; }
+        return year;
+    }
 
     public void setYear(int year) {
-        this.year = year; }
+        this.year = year;
+    }
 
     public int getPageCount() {
-        return pageCount; }
+        return pageCount;
+    }
 
     public void setPageCount(int pageCount) {
-        this.pageCount = pageCount; }
+        this.pageCount = pageCount;
+    }
 
 }

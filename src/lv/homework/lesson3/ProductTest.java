@@ -1,5 +1,5 @@
 package lv.homework.lesson3;
-//OK
+
 public class ProductTest {
 
     public static void main(String[] args) {
@@ -15,13 +15,5 @@ public class ProductTest {
                 + ", regular price = " + firstProduct.getRegularPrice()
                 + " EUR, discount = " + firstProduct.getDiscount()
                 + "%, actual price = " + firstProduct.calculateActualPrice() + " EUR");
-
-
     }
-
-
-
-
-
-
 }

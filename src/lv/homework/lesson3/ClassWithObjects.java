@@ -10,7 +10,4 @@ public class ClassWithObjects {
     Double doubleVariable;
     Character characterVariable;
     Boolean booleanVariable;
-
-
-
 }

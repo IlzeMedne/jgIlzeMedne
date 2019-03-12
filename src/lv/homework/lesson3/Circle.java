@@ -2,8 +2,7 @@ package lv.homework.lesson3;
 
 public class Circle {
 
-    //mainīgajam jābūt "private"
-    double radius;
+    private double radius;
 
     public double getRadius() {
         return radius;
@@ -13,7 +12,7 @@ public class Circle {
         this.radius = radius;
     }
 
-    double calculateArea(){
+    double calculateArea() {
         return 3.14 * radius * radius;
 
 

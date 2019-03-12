@@ -15,27 +15,28 @@ public class SignComparatorTest {
         test.shouldNumberIsEqualToZero();
     }
 
-    public void shouldNumberIsPositive(){
+    public void shouldNumberIsPositive() {
         SignComparator comparator = new SignComparator();
         String result = comparator.compare(145);
-        compareResult(result.equals("Number ir positive") , "shouldNumberIsPositive");
+        compareResult(result.equals("Number ir positive"), "shouldNumberIsPositive");
     }
 
-    public void shouldNumberIsNegative(){
+    public void shouldNumberIsNegative() {
         SignComparator comparator = new SignComparator();
         String result = comparator.compare(-5);
-        compareResult(result.equals("Number is negative"),"shouldNumberIsNegative");
-    }
-    public void shouldNumberIsEqualToZero(){
-        SignComparator comparator = new SignComparator();
-        String result = comparator.compare(0);
-        compareResult(result.equals("Number is equal to zero"),"shouldNumberIsEqualToZero");
+        compareResult(result.equals("Number is negative"), "shouldNumberIsNegative");
     }
 
-    void compareResult (boolean result,String testName){
-        if (result){
+    public void shouldNumberIsEqualToZero() {
+        SignComparator comparator = new SignComparator();
+        String result = comparator.compare(0);
+        compareResult(result.equals("Number is equal to zero"), "shouldNumberIsEqualToZero");
+    }
+
+    void compareResult(boolean result, String testName) {
+        if (result) {
             System.out.println(testName + " OK");
-        } else{
+        } else {
             System.out.println(testName + " FAIL");
         }
     }

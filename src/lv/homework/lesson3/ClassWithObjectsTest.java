@@ -2,7 +2,6 @@ package lv.homework.lesson3;
 
 public class ClassWithObjectsTest {
 
-
     public static void main(String[] args) {
 
         ClassWithObjects classWithObjects = new ClassWithObjects();
@@ -14,7 +13,7 @@ public class ClassWithObjectsTest {
         printToConsole(classWithObjects);
     }
 
-    public static void printToConsole(ClassWithObjects classWithObjects){
+    public static void printToConsole(ClassWithObjects classWithObjects) {
         System.out.println("Byte = " + classWithObjects.byteVariable);
         System.out.println("Short = " + classWithObjects.shortVariable);
         System.out.println("Integer = " + classWithObjects.integerVariable);
@@ -25,7 +24,7 @@ public class ClassWithObjectsTest {
         System.out.println("Boolean = " + classWithObjects.booleanVariable);
     }
 
-    public static void fillObjectVariables(ClassWithObjects classWithObjects){
+    public static void fillObjectVariables(ClassWithObjects classWithObjects) {
         classWithObjects.byteVariable = 13;
         classWithObjects.shortVariable = 432;
         classWithObjects.integerVariable = 15476;
@@ -34,9 +33,5 @@ public class ClassWithObjectsTest {
         classWithObjects.doubleVariable = 53454.123;
         classWithObjects.characterVariable = 'A';
         classWithObjects.booleanVariable = false;
-
     }
-
-
-
 }

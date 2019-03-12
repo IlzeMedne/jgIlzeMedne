@@ -4,7 +4,7 @@ public class LightColorDetector {
 
     public String detect(int wavelength) {
 
-        if ((wavelength >= 380) && (wavelength < 450)) {
+        if (wavelength >= 380 && wavelength < 450) {
             return "gaisma ir violētā krāsā";
         } else if ((wavelength >= 450) && (wavelength < 495)) {
             return "gaisma ir zilā krāsā";

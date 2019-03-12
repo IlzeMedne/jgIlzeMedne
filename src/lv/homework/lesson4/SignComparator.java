@@ -2,7 +2,7 @@ package lv.homework.lesson4;
 
 public class SignComparator {
 
-    public String compare (int number) {
+    public String compare(int number) {
         if (number > 0) {
             return "Number ir positive";
         } else if (number < 0) {

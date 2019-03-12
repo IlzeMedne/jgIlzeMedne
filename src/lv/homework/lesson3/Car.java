@@ -7,13 +7,16 @@ public class Car {
     private int year;
 
     public String getColor() {
-        return color; }
+        return color;
+    }
 
     public void setColor(String color) {
-        this.color = color; }
+        this.color = color;
+    }
 
     public String getManufacturer() {
-        return manufacturer; }
+        return manufacturer;
+    }
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;

@@ -9,12 +9,7 @@ public class HumanTest {
         myHuman.setAge(20);
 
         myHuman.sayHi();
-        System.out.println( "My name is " + myHuman.getName()
+        System.out.println("My name is " + myHuman.getName()
                 + ", I'm " + myHuman.getAge() + " years old");
-
-
     }
-
-
-
 }

@@ -5,7 +5,5 @@ public class ClassWithPrimitivesTest {
         ClassWithPrimitives classWithPrimitives = new ClassWithPrimitives();
 
         classWithPrimitives.printToConsole();
-
     }
-
 }
