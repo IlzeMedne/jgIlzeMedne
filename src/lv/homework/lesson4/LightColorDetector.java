@@ -6,7 +6,7 @@ public class LightColorDetector {
 
         if (wavelength >= 380 && wavelength < 450) {
             return "gaisma ir violētā krāsā";
-        } else if ((wavelength >= 450) && (wavelength < 495)) {
+        } else if (wavelength >= 450 && wavelength < 495) {
             return "gaisma ir zilā krāsā";
         } else if ((wavelength >= 495) && (wavelength < 570)) {
             return "gaisma ir zaļā krāsā";
