@@ -28,7 +28,7 @@ public class OddNumbers {
 
     private static void printOddNumbersWithFor() {
 
-        System.out.println("Odd numbers with FOR:");
+        System.out.println("Odd numbers with ExampleFor:");
 
         for (int i = 0; i <= 50; i++) {
             if (i % 2 != 0) {
