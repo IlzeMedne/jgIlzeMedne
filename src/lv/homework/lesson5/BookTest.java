@@ -7,7 +7,10 @@ public class BookTest {
         testBookEquals();
         testBookToString();
 
-
+        //trūkst test uz NOT equals
+        //objekta Book veidošana var izveidot metodi ar parametriem atbilstošiem
+// liekas rindas
+//
     }
 
     private static void testBookEquals() {
@@ -50,7 +53,8 @@ public class BookTest {
 
 // vai pareizāk rakstīt uzreiz bez getteriem sagaidāmo rezultātu šādi:?
         //String expected = "Book: {author = Paulo Coelho, title = The Fifth Mountain, page count = 245}";
-
+//  testējot tieši pareizi būtu tā darīt
+//  jo mēs testējam toString()
 
         System.out.println("ToString Test: ");
 

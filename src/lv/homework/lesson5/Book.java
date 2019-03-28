@@ -32,7 +32,7 @@ public class Book {
         return pageCount;
     }
 
-
+//lieka rinda
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -41,7 +41,7 @@ public class Book {
         return Objects.equals(author, that.author) &&
                 Objects.equals(title, that.title) &&
                 Objects.equals(pageCount, that.pageCount);
-
+//lieka rinda
     }
 
     @Override
