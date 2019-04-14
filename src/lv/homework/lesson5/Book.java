@@ -8,30 +8,11 @@ public class Book {
     private String title;
     private int pageCount;
 
-    public void setAuthor(String author) {
+    public Book(String author, String title, int pageCount) {
         this.author = author;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setPageCount(int pageCount) {
         this.pageCount = pageCount;
     }
-
-    public int getPageCount() {
-        return pageCount;
-    }
-
 
     @Override
     public boolean equals(Object obj) {
@@ -41,7 +22,6 @@ public class Book {
         return Objects.equals(author, that.author) &&
                 Objects.equals(title, that.title) &&
                 Objects.equals(pageCount, that.pageCount);
-
     }
 
     @Override

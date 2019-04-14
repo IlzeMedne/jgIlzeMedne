@@ -2,48 +2,50 @@ package lv.homework.lesson6;
 
 public class NumberService {
 
-    public static void sumInRange(int firstNumber, int secondNumber) {
+    private int firstNumber;
+    private int secondNumber;
+
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
+    public int getSecondNumber() {
+        return secondNumber;
+    }
+
+    public NumberService(int firstNumber, int secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+
+    public int sumInRange() {
         int sum = 0;
         for (int i = startNumber(firstNumber, secondNumber);
              i <= endNumber(firstNumber, secondNumber); i++) {
-            sum = sum + i;
+            sum += i;
         }
-        System.out.println("Sum in range: " + firstNumber + " to "
-                + secondNumber + " is: " + sum);
-        System.out.println();
+        return sum;
     }
 
-    public static void getEvenNumberCount(int a, int b) {
+    public int getEvenNumberCount() {
         int count = 0;
-        for (int i = startNumber(a, b); i <= endNumber(a, b); i++) {
+        for (int i = startNumber(firstNumber, secondNumber); i <= endNumber(firstNumber, secondNumber); i++) {
             if (isEvenNumber(i)) {
                 count += 1;
             }
         }
-        System.out.println("Even number count in range: " + a + " to " + b + " is: " + count);
+        return count;
     }
 
-    private static boolean isEvenNumber(int i) {
-        if (i % 2 == 0 && i != 0) {
-            return true;
-        } else {
-            return false;
-        }
+    private boolean isEvenNumber(int i) {
+        return i % 2 == 0 && i != 0 ? true : false;
     }
 
-    private static int endNumber(int firstNumber, int secondNumber) {
-        if (firstNumber < secondNumber) {
-            return secondNumber;
-        } else {
-            return firstNumber;
-        }
+    private int endNumber(int firstNumber, int secondNumber) {
+        return firstNumber < secondNumber ? secondNumber : firstNumber;
     }
 
-    private static int startNumber(int firstNumber, int secondNumber) {
-        if (firstNumber < secondNumber) {
-            return firstNumber;
-        } else {
-            return secondNumber;
-        }
+    private int startNumber(int firstNumber, int secondNumber) {
+        return firstNumber < secondNumber ? firstNumber : secondNumber;
     }
 }
