@@ -21,7 +21,7 @@ public class ArrayServiceTest {
         arrayService.printArrayToConsole(array);
 
         System.out.println();
-        arrayService.swap(array,0,1);
+        arrayService.swap(array, 0, 1);
         System.out.println("\nSwapped first and second element in array: ");
         arrayService.printArrayToConsole(array);
 

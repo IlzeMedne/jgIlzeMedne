@@ -32,4 +32,3 @@ public class Book {
                 ", page count = " + pageCount + "}";
     }
 }
-
