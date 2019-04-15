@@ -2,6 +2,8 @@ package lv.homework.lesson9;
 
 import java.util.*;
 
+//nepieciešams šeit izveidot metodes addWord, getUniqueWords, printToConsole
+//tad šīs metodes pārbaudīt te pat main metodē
 public class UniqueWordVocabulary {
     public static void main(String[] args) {
 

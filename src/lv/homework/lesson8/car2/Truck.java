@@ -11,6 +11,7 @@ public class Truck extends Car {
         this.capacityTons = capacityTons;
     }
 
+    //nezvai šāda toString izvade būs viegli lasāma, labak super klaases laukus manuāli iekļaut
     @Override
     public String toString() {
         return "Truck{" +

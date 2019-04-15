@@ -4,20 +4,22 @@ import java.util.Random;
 
 public class ArrayService {
 
-    private int n;
+    private int n; //neizmantots mainīgais - dzēst
 
     public int[] create(int n) {
-        this.n = n;
+        this.n = n; //nav nepieciešama šāda operācija, jo "n" nekur netiek izmantots
         return new int[n];
     }
 
     public void fillArrayWithRandomNumbers(int[] array) {
+        //turpmāk labak izmantot foreach konstrukciju
         for (int i = 0; i < array.length; i++) {
             array[i] = newRandomNumber();
         }
     }
 
     public void printArrayToConsole(int[] array) {
+        //turpmāk labak izmantot foreach konstrukciju
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ", ");
         }
@@ -25,6 +27,10 @@ public class ArrayService {
 
     public int sumInArray(int[] array) {
         int sum = 0;
+        //turpmāk labak izmantot foreach konstrukciju
+        //for(int num : array) {
+        //            sum += num;
+        //        }
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
@@ -57,7 +63,7 @@ public class ArrayService {
     }
 
     private int newRandomNumber() {
-        Random randomGenerator = new Random();
+        Random randomGenerator = new Random();  //šo nav nepieciešams veidot katru reizi no jauna - var iznest kā klases lauku
         int randomNumber = randomGenerator.nextInt(101);
         return randomNumber;
     }
