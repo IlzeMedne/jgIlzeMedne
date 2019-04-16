@@ -11,7 +11,6 @@ public class PassengerCar extends Car {
         this.carType = carType;
     }
 
-    //nezvai šāda toString izvade būs viegli lasāma, labak super klaases laukus manuāli iekļaut
     @Override
     public String toString() {
         return "Passenger Car:" +
