@@ -4,10 +4,9 @@ import java.util.Random;
 
 public class ArrayService {
 
-    private int n;
+    Random randomGenerator = new Random();
 
     public int[] create(int n) {
-        this.n = n;
         return new int[n];
     }
 
@@ -18,15 +17,15 @@ public class ArrayService {
     }
 
     public void printArrayToConsole(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ", ");
+        for (int num : array) {
+            System.out.print(num + ", ");
         }
     }
 
     public int sumInArray(int[] array) {
         int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+        for (int num : array) {
+            sum += num;
         }
         return sum;
     }
@@ -57,7 +56,6 @@ public class ArrayService {
     }
 
     private int newRandomNumber() {
-        Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(101);
         return randomNumber;
     }

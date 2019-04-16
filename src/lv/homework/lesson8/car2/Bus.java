@@ -13,10 +13,14 @@ public class Bus extends Car {
 
     @Override
     public String toString() {
-        return "Bus{" +
-                "passengersSeats=" + passengersSeats +
-                "} " + super.toString();
+        return "Bus: " +
+                "\npassenger seats: " + passengersSeats
+                + super.toString();
     }
+    // man šādi tieši liekās forši izmantot mantošanu,
+    // jo nav vēlreiz jāprarraksta tas, kas jau vienreiz rakstīts un derīgs visiem.
+    // Mazliet pamainīju veidu kā parādās konsolē un
+    // klasē Truck izmainīju super.toString uz getColor utt. lai var redzēt, ka tā arī var izdarīt  :)
 
     @Override
     public boolean equals(Object o) {
