@@ -11,6 +11,7 @@ public class Bus extends Car {
         this.passengersSeats = passengersSeats;
     }
 
+    //nezvai šāda toString izvade būs viegli lasāma, labak super klaases laukus manuāli iekļaut
     @Override
     public String toString() {
         return "Bus: " +

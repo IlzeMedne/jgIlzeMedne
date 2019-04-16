@@ -2,6 +2,7 @@ package lv.homework.lesson8.car;
 
 import java.util.Objects;
 
+//Tā kā ir jābūt kopīgām īpašībām(jeb stāvokļiem), tad ti ir jābūt parastai klasei
 abstract class Car {
 
     abstract String color();
