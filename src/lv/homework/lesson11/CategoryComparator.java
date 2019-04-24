@@ -2,6 +2,7 @@ package lv.homework.lesson11;
 
 import java.util.Comparator;
 
+//Malacis -> Cool
 public class CategoryComparator implements Comparator<Product> {
     //Zinu, ka šis nebija parasīts:
     @Override

@@ -2,6 +2,7 @@ package lv.homework.lesson11;
 
 import java.util.List;
 
+//OK
 public interface Repository<T> {
 
     void addProduct(T product);

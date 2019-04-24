@@ -2,6 +2,7 @@ package lv.homework.lesson11;
 
 import java.util.*;
 
+//Ok
 public class ShoppingList implements Repository<Product> {
 
     private List<Product> products = new ArrayList<>();
@@ -13,11 +14,11 @@ public class ShoppingList implements Repository<Product> {
 
     @Override
     public void deleteByName(String name) {
-        products.removeIf((Product prod) -> prod.getName() == name);
+        products.removeIf((Product prod) -> prod.getName() == name); //:D google ja - vai zini kā šo onstrukciju sauc? ;)
     }
 
     public void printAllList(String message) {
-        List<Product> allList = new ArrayList<>(products);
+        List<Product> allList = new ArrayList<>(products);  // šī darbība nav nepieciešama - Tev jau ir ArrayList
         System.out.println("\nShopping list: " + message + allList);
     }
 
