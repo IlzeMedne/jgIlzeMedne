@@ -6,7 +6,7 @@ public class UserValidationService {
     private String lastName;
     private Integer age;
 
-    public UserValidationService(String name, String lastName, Integer age) throws ValidationException {
+    public UserValidationService(String name, String lastName, Integer age) {
         if (name.length() < 3 || name.length() > 15) {
             throw new ValidationException("Name length should be 3 - 15 characters");
         }
